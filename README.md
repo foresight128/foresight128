@@ -15,7 +15,7 @@
 
 ### 송예지 포트폴리오 사이트 👇🏻👇🏻
 
-https://foresight128.github.io/songyeji_portfolio
+https://foresight128.github.io/foresight128/
 
 
 <br>
