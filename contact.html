@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="songyeji">
+    <title>프론트엔드 개발자 송예지 포트폴리오</title>
+    <link rel="icon" href="./img/yeji.jpg">
+    <script src="https://kit.fontawesome.com/5ad3dba23e.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/response.css">
+    <script src="js/main.js" defer></script>
+  </head>
+<body>
+  <div class="skip">
+    <a href="#nav">메인메뉴 바로가기</a>
+    <a href="#container">본문 바로가기</a>
+  </div>
+
+  <header>
+    <div class="center">
+      <h1>
+        <a href="./index.html" title="홈으로">YEJI's Portfolio</a>
+      </h1>
+      <nav>
+        <ul id="nav">
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./profile.html">Profile</a></li>
+          <li><a href="./project.html">Project</a></li>
+          <li class="is_on"><a href="./contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+
+  <div id="container" class="center">
+    <section id="contact">
+      <h2 class="blind" aria-hidden="true">CONTACT</h2>
+      <h3 class="title">CONTACT</h3>
+      <p>궁금한 점이 있으시다면 아래 연락처를 통해 연락 바랍니다 📞</p>
+      <div class="contact_wrap">
+        <div class="contact_box">
+          <ul>
+            <li>
+              <i class="fas fa-mobile-alt" aria-hidden="true"></i>
+              <p><a href="tel:+82 01090161062">+82 10 9016 1062</a></p>
+            </li>
+            <li>
+              <i class="far fa-envelope" aria-hidden="true"></i>
+              <p><a href="mailto:foresight128@gmail.com" target="_blank">foresight128@gmail.com</a></p>
+            </li>
+            <li>
+              <i class="fab fa-github" aria-hidden="true"></i>
+              <p><a href="https://github.com/foresight128" target="_blank"> https://github.com/foresight128</a></p>
+            </li>
+          </ul>
+        </div>
+        <div class="contact_form">
+          <form id="contact-form" class="gform" action="https://script.google.com/macros/s/AKfycbyfk-woAZ-obs9oSRqggGdzMPwQI4xjLnICmDPY/exec" method="POST" data-email="foresight128@gmail.com">
+            <input type="hidden" name="contact_number">
+            <input type="text" name="user_name" placeholder="*Name" required class="input_name">
+            <input type="email" name="user_email" placeholder="*Email" required class="input_email">
+            <textarea name="message" placeholder="*Message" required class="input_message"></textarea>
+            <input type="submit" value="Send" class="send" title="전송하기">
+          </form>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <footer>
+    <p class="center">&copy; <span class="year">2021</span> 송예지 all rights reserved</p>
+    <div>
+      <button type="button" title="메일 보내기"><a href="mailto:foresight128@gmail.com" target="_blank"></a></button>
+      <button type="button" title="깃허브 보러가기"><a href="https://github.com/foresight128" target="_blank"></a></button>
+      <button type="button" title="카카오톡 보내기"><a href="https://open.kakao.com/o/sQM5fTEd" target="_blank"></a></button>
+    </div>
+  </footer>
+
+  <script data-cfasync="false" type="text/javascript"
+src="https://cdn.rawgit.com/dwyl/html-form-send-email-via-google-script-without-server/master/form-submission-handler.js"></script>
+</body>
+</html>

@@ -1,0 +1,460 @@
+@import url(./common.css);
+
+header{
+  height: 80px;
+  line-height: 80px;
+}
+header div{
+  display: flex;
+  justify-content: space-between;
+}
+header div nav{
+  position: relative;
+}
+
+header #nav>li{
+  display: inline-block;
+  padding-left: 20px;
+}
+header #nav>li>a{
+  font-size: 20px;
+  color: #222;
+}
+header #nav>li:hover a,
+header #nav .is_on a{
+  color: #6096ba;
+}
+
+.title{
+  color: #222;
+  font-weight: 700;
+  font-size: 30px;
+  text-align: center;
+  margin: 10% 0 100px;
+}
+
+#home{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  margin: 10% 0;
+}
+
+#home .imgBox{
+  width: 500px;
+}
+
+#home .imgBox img{
+  width: 100%;
+}
+
+#home .text_box p{
+  color: #222;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 1.6;
+  position: relative;
+  overflow: hidden;
+}
+
+#home .text_box p .deco{
+  display: inline-block;
+  position: absolute;
+  bottom: -5px;
+  left: -350px;
+  z-index: -2;
+  width: 355px;
+  height: 60px;
+  background-color: #6096ba;
+  transform: translateX(350px);
+  transition: 2s;
+}
+
+#home .text_box p strong{
+  color: white;
+}
+
+#home .text_box p .myname{
+  color: #6096ba;
+}
+
+#home .text_box button{
+  border:none;
+  background-color: #6096ba;
+  border-radius: 25px;
+  margin-top: 200px;
+}
+
+#home .text_box button a{
+  display: inline-block;
+  font-size: 20px;
+  color: white;
+  padding: 10px 50px;
+}
+
+#profile .introduce_box{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+#profile .text_box{
+  width: 60%;
+}
+
+#profile .text_box>span{
+  color: #8b8c89;
+}
+
+#profile .text_box h4{
+  font-size: 25px;
+  margin: 15px 0 50px 0;
+}
+
+#profile .text_box h4 span{
+  font-size: 40px;
+}
+
+#profile .text_box p{
+  line-height: 2;
+  text-indent: 5px;
+  margin-bottom: 30px;
+}
+
+#profile .text_box p>strong{
+  color: #6096ba;
+}
+
+#profile .text_box p>strong:last-child{
+  color: black;
+  background-color: #bdd7e9;
+  border: none;
+  font-weight: 700;
+}
+
+#profile .text_box ul{
+  margin: 50px 0;
+  line-height: 1.5;
+}
+
+#profile .profile-img{
+  width: 350px;
+  height: 350px;
+  background-image: url(../img/profile_02.png);
+  background-size: 350px;
+  background-repeat: no-repeat;
+}
+
+#profile .line{
+  margin: 10% auto;
+  width: 60%;
+  height: 1px;
+  opacity: 0.3;
+  background-color: #8b8c89;
+}
+
+#profile .skills{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom:150px;
+}
+
+#profile .skills li{
+  margin: 5px;
+}
+
+#profile .skills li div{
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-size: 75px;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+#profile .skills li:first-child div{ 
+  background-image: url(../img/html5.png);
+}
+
+#profile .skills li:nth-child(2) div{ 
+  background-image: url(../img/css.png);
+}
+
+#profile .skills li:nth-child(3) div{ 
+  background-image: url(../img/javascript.png);
+  background-size: 55px;
+}
+
+#profile .skills li:nth-child(4) div{ 
+  background-image: url(../img/es6.png);
+  background-size: 180px;
+}
+
+#profile .skills li:nth-child(5) div{ 
+  background-image: url(../img/react.png);
+}
+
+#profile .skills li:nth-child(6) div{ 
+  background-image: url(../img/Vue.png);
+  background-size: 70px;
+}
+
+#profile .skills li:nth-child(7) div{ 
+  background-image: url(../img/sass.png);
+}
+
+#profile .skills li:nth-child(8) div{ 
+  background-image: url(../img/Bootstrap.png);
+}
+
+#profile .skills li:nth-child(9) div{ 
+  background-image: url(../img/git.png);
+}
+
+#profile .skills li p{
+  text-align: center;
+  margin: 5px 0 20px;
+}
+
+#project{
+  text-align: center;
+}
+
+#project>p{
+  line-height: 1.5;
+  margin-bottom: 30px;
+}
+
+#project .projectWrap{
+  margin: 10% 0;
+}
+
+#project .projectWrap>ul{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+#project .projectWrap .project_block{
+  display: inline-block;
+  width: 350px;
+  margin-bottom: 50px;
+  transition: 0.5s;
+  border-radius: 20px;
+  box-shadow: 0 0 10px 1px rgb(201, 201, 201);
+}
+
+#project .projectWrap .project_block:hover{
+  transform: translateY(-10px);
+}
+
+#project .projectWrap .project_bg {
+  width: 100%;
+  height: 180px;
+  background-color: #6096ba;
+  border-radius: 20px 20px 0 0;
+  padding-top: 75px;
+}
+
+#project .projectWrap .project_bg em{
+  color: white;
+  font-size: 35px;
+  font-weight: 700;
+}
+
+#project .projectWrap .project_cont{
+  width: 100%;
+  height: 100px;
+  padding: 10px;
+  border-radius: 20px 20px 0 0;
+}
+
+#project .projectWrap .project_cont .project_btn{
+  margin-top: 20px;
+}
+
+#project .projectWrap .project_cont .project_btn li{
+  display: inline-block;
+}
+
+#project .projectWrap .project_cont .project_btn li:last-child{
+  margin-left: 10px;
+}
+
+.project_cont .project_btn li button{
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+}
+
+#project .projectWrap .project_cont .project_btn li:hover button{
+  background-color: #ddd;
+}
+
+.project_cont .project_btn li button a{
+  display: inline-block;
+  font-size: 16px;
+  width: 80px;
+  padding: 5px 0;
+}
+
+#project .projectWrap .movie_box .project_bg{
+  background-color: #0008fc;
+}
+
+#project .projectWrap .carrot_game .project_bg{
+  background-color: #f38623;
+}
+
+#project .projectWrap .paint .project_bg{
+  background-color: #2c2c2c;
+}
+
+#project .projectWrap .momentum .project_bg{
+  background-color: #314615;
+}
+
+#project .projectWrap .calculator .project_bg{
+  background-color: #eee;
+}
+
+#project .projectWrap .calculator .project_bg em{
+  color: #222;
+}
+
+#project .projectWrap .tetris_game .project_bg{
+  background-color: #5415a2;
+}
+
+#project .projectWrap .costarica .project_bg{
+  background-color: #00b4d8;
+}
+
+#project .projectWrap .todo_list .project_bg{
+  background-color: #718355;
+}
+
+#project .projectWrap .songyeji .project_bg{
+  background-color: #0a227d;
+}
+
+#project .projectWrap .hotpink .project_bg{
+  background-color: #ff3399;
+}
+
+#project .projectWrap .burberry .project_bg{
+  background-color: #996633;
+}
+
+#project .projectWrap .incheon_tour .project_bg{
+  background-color: #0073be;
+}
+
+#project .projectWrap .dunkin .project_bg{
+  background-color: #fc6719;
+}
+
+#project .projectWrap .subway .project_bg{
+  background-color: #009223;
+}
+
+#project .projectWrap .invio .project_bg{
+  background-color: #d3e174;
+}
+
+#project .projectWrap .woori_bank .project_bg{
+  background-color: #0067ac;
+}
+
+#contact{
+  text-align: center;
+}
+
+#contact>p{
+  font-size: 16px;
+  margin-bottom: 50px;
+  line-height: 1.5;
+}
+
+#contact .contact_wrap{
+  margin: 5% 0 10%;
+  display: flex;
+  justify-content:space-evenly;
+  flex-wrap: wrap;
+  align-items:center;
+}
+
+#contact .contact_wrap .contact_box li{
+  margin-bottom: 30px;
+}
+
+#contact .contact_wrap .contact_box i{
+  color: #6096ba;
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+#contact .contact_wrap .contact_form input, textarea{
+  display: block;
+  width: 350px;
+  height: 30px;
+  margin-bottom: 10px;
+  padding:5px;
+  border: 1px solid #ddd;
+}
+
+#contact .contact_wrap .contact_form textarea{
+  height: 130px;
+}
+
+#contact .contact_wrap .contact_form .send{
+  height: 40px;
+  cursor: pointer;
+  background-color: #6096ba;
+  border: #6096ba;
+  color: white;
+  font-size: 16px;
+}
+
+footer{
+  background-color: #222;
+  padding: 70px;
+  box-sizing: border-box;
+}
+
+footer>p{
+  color: #e7ecef;
+  text-align: center;
+}
+
+footer div{
+  position: fixed;
+  right: 2%;
+  bottom: 3%;
+}
+
+footer div button{
+  background-color: transparent;
+  border: none;
+}
+
+footer div button a{
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  background:url(../img/email.png) center center no-repeat;
+  background-size: 35px;
+}
+
+footer div button:nth-child(2) a{
+  background:url(../img/github.png) center center no-repeat;
+  background-size: 30px;
+}
+
+footer div button:nth-child(3) a{
+  background:url(../img/kakao.png) center center no-repeat;
+  background-size: 28px;
+}
+
