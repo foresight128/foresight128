@@ -79,18 +79,14 @@ header #nav .is_on a{
   color: #6096ba;
 }
 
-#home .text_box button{
-  border:none;
-  background-color: #6096ba;
-  border-radius: 25px;
-  margin-top: 200px;
-}
-
-#home .text_box button a{
+#home .text_box a{
   display: inline-block;
   font-size: 20px;
   color: white;
   padding: 10px 50px;
+  margin-top: 200px;
+  background-color: #6096ba;
+  border-radius: 25px;
 }
 
 #profile .introduce_box{
@@ -283,21 +279,18 @@ header #nav .is_on a{
   margin-left: 10px;
 }
 
-.project_cont .project_btn li button{
+.project_cont .project_btn li a{
+  display: inline-block;
+  font-size: 16px;
+  width: 80px;
+  padding: 5px 0;
   background-color: white;
   border: 1px solid #ddd;
   border-radius: 10px;
 }
 
-#project .projectWrap .project_cont .project_btn li:hover button{
+#project .projectWrap .project_cont .project_btn li:hover a{
   background-color: #ddd;
-}
-
-.project_cont .project_btn li button a{
-  display: inline-block;
-  font-size: 16px;
-  width: 80px;
-  padding: 5px 0;
 }
 
 #project .projectWrap .movie_box .project_bg{
@@ -435,25 +428,21 @@ footer div{
   bottom: 3%;
 }
 
-footer div button{
-  background-color: transparent;
-  border: none;
-}
-
-footer div button a{
+footer div a{
   display: inline-block;
   width: 30px;
   height: 30px;
   background:url(../img/email.png) center center no-repeat;
   background-size: 35px;
+  margin-left: 10px;
 }
 
-footer div button:nth-child(2) a{
+footer div a:nth-child(2){
   background:url(../img/github.png) center center no-repeat;
   background-size: 30px;
 }
 
-footer div button:nth-child(3) a{
+footer div a:nth-child(3){
   background:url(../img/kakao.png) center center no-repeat;
   background-size: 28px;
 }

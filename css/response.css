@@ -26,7 +26,7 @@
     transform: translateX(310px);
   }
 
-  #home .text_box button{
+  #home .text_box a{
     margin-top: 100px;
   }
 }
@@ -44,7 +44,7 @@
     text-align: center;
   }
 
-  #home .text_box button{
+  #home .text_box a{
     display: none;
   }
 
